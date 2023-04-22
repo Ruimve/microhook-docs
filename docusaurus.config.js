@@ -80,7 +80,7 @@ const config = {
             label: 'Docs',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/mdx', label: 'MDX', position: 'right' },
+          // { to: '/mdx', label: 'MDX', position: 'right' },
           {
             href: 'https://github.com/Ruimve/microhook',
             position: 'right',
@@ -125,10 +125,10 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'Changelog',
-                to: '/Changelog',
-              },
+              // {
+              //   label: 'Changelog',
+              //   to: '/Changelog',
+              // },
               {
                 label: 'GitHub',
                 href: 'https://github.com/Ruimve/microhook',
