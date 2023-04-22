@@ -2,46 +2,84 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Are you tired of bloated libraries that slow down your React applications? 🐌 Are you looking for a lightweight solution to handle your component logic? 🤔 Then look no further than Microhook! 🚀
 
-## Getting Started
+## 🧐 What is Microhook?
 
-Get started by **creating a new site**.
+Microhook is a tiny library of React hooks designed to simplify your code and improve performance. With Microhook, you can easily manage component state, handle side effects, and more, all in a compact and easy-to-use package.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## 🌟 Features
 
-### What you'll need
+Microhook offers a range of powerful features to help you build better React applications. Here are just a few of the highlights:
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- **🚀 Lightweight:** 
+At just a few kilobytes, Microhook is one of the smallest React hooks libraries available. It won't slow down your application or bloat your bundle size.
 
-## Generate a new site
+- **🎣 Easy to Use:** 
+Microhook hooks are designed to be simple and easy to use, with intuitive APIs that make it easy to handle complex logic.
 
-Generate a new Docusaurus site using the **classic template**.
+- **🕵️‍♀️ Fully Typed:** 
+Microhook is fully typed, so you can be confident that your code will work as expected, without the need for extensive testing or debugging.
 
-The classic template will automatically be added to your project after you run the command:
+- **🌈 Customizable:** 
+With Microhook, you can easily customize your hooks to fit your specific needs, without sacrificing performance or readability.
 
-```bash
-npm init docusaurus@latest my-website classic
+## 🤖 Example Usage
+
+Here's a simple example of how you can use Microhook to manage component state:
+
+```tsx
+import { useLoading } from 'microhook';
+/**
+ * @input 
+ * import { useLoading } from 'microhook';
+ */
+
+function fetchData(keyword: string) {
+  return new Promise<string>((resolve, reject) => {
+    setTimeout(() => {
+      resolve(keyword + ': data received')
+    }, 2000)
+  })
+}
+
+function Demo() {
+  const [result, { wrapRequset: requestData }] = useLoading<typeof fetchData>(fetchData);
+
+  const handleClick = () => {
+    requestData('1');
+  }
+
+  return <div>
+    <button onClick={handleClick}>start fetch</button>
+    <div>
+      {
+        result.loading ? 'loading' : result.data
+      }
+    </div>
+  </div>
+}
+
+export {
+  Demo
+}
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+With just a few lines of code, you can easily manage state in your component.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## 🤝 Contributing
+We welcome contributions to Microhook! Whether you find a bug, have a feature request, or want to submit a pull request, we'd love to hear from you. Check out our [contributing guidelines](https://github.com/Ruimve/microhook/blob/master/CONTRIBUTING.md) for more information.
 
-## Start your site
+## 📖 Documentation
+For full documentation on how to use Microhook, check out our [documentation site](https://github.com/Ruimve/microhook/blob/master/README.md).
 
-Run the development server:
+## 💻 Support
+If you run into any issues with Microhook, feel free to [open an issue](https://github.com/Ruimve/microhook/issues) or reach out to us on [Twitter](https://twitter.com/ruimve159626). We're always happy to help!
 
-```bash
-cd my-website
-npm run start
-```
+## 🔜 Roadmap
+We have a lot of exciting features planned for Microhook, including more hooks for handling data requests, improved performance optimizations, and more. Stay tuned for updates!
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## 🎉 Conclusion
+If you're looking for a lightweight, easy-to-use solution for managing state and handling logic in your React applications, Microhook is the perfect choice. Try it out today and see the difference for yourself! 🎉
