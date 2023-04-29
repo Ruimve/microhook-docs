@@ -1,8 +1,13 @@
 ---
 sidebar_position: 2
+description: A hook to measure the dimensions and position of an HTML element in React.
 ---
 
 # useMeasure
+
+<head>
+  <meta name="keywords" content="React useMeasure hook, measuring React elements, getting dimensions of React elements, ResizeObserver, useCallback, useEffect, RefObject, SEO-friendly React hooks." />
+</head>
 
 The **useMeasure** hook is a React hook that is used to measure the dimensions and position of an HTML element. It uses the **ResizeObserver** API to detect changes in the size of the element and returns a **Measure** object that contains the measurements of the element. This hook is useful for implementing responsive designs or for any scenario where you need to know the dimensions of an element in your application.
 

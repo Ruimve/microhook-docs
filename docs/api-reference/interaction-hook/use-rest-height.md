@@ -1,8 +1,13 @@
 ---
 sidebar_position: 1
+description: Adjusts the height of an element to fill the remaining vertical space in its container.
 ---
 
 # useRestHeight
+
+<head>
+  <meta name="keywords" content="React hook, height measurement, flexible layout, dynamic content, CSS styles, DOM element, responsive design, TypeScript, front-end development, web development." />
+</head>
 
 The **useRestHeight** Hook is a custom React Hook that calculates the remaining height of a parent element after subtracting the height of its child elements and any specified offsets. It returns an array with the remaining height and a function to recalculate the height.
 

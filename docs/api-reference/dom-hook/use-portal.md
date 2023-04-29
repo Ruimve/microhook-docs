@@ -1,8 +1,13 @@
 ---
 sidebar_position: 1
+description: React hook for rendering content in a specified container using portals.
 ---
 
 # usePortal
+
+<head>
+  <meta name="keywords" content="react portal rendering, createPortal API, dynamic UI components, HTML element rendering, container management, portal composition in React, high-order component (HOC) pattern, DOM element rendering, nested rendering in React." />
+</head>
 
 **usePortal** is a custom React hook that enables rendering a React component to a different location in the DOM, other than its parent container. This can be useful for creating modal dialogs, tooltips, and other components that need to be positioned relative to an element in the DOM.
 

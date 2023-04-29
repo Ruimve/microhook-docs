@@ -1,8 +1,13 @@
 ---
 sidebar_position: 2
+description: A React hook for observing element intersections in the viewport.
 ---
 
 # useIntersectionObserver
+
+<head>
+  <meta name="keywords" content="useIntersectionObserver, IntersectionObserver, React IntersectionObserver hook, Detect element visibility, Track element intersection, Observe element visibility changes, Trigger actions on element intersection, React visibility hook." />
+</head>
 
 The **useIntersectionObserver** hook is a custom React hook that uses the Intersection Observer API to determine whether a specified HTML element is currently visible on the screen. This hook can be useful for implementing lazy loading of images, infinite scrolling, or other dynamic UI components that need to be triggered when the user scrolls to a certain part of the page.
 

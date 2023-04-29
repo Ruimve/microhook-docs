@@ -1,8 +1,13 @@
 ---
 sidebar_position: 1
+description: A React hook to manage loading state, with support for async/await syntax and timeout control.
 ---
 
 # useLoading
+
+<head>
+  <meta name="keywords" content="React useLoading hook, Asynchronous loading in React, Loading state management in React, Handling loading states in React, React component loading, Async state management in React, Optimize React loading times, Improve performance of React loading" />
+</head>
 
 **useLoading** is a custom React hook that handles the loading status of an API or Promise. It returns a tuple of two values, a **response** object, and an **action** object. The **response** object contains the loading state and data returned by the request, while the **action** object contains a function that wraps the request and handles the loading state.
 

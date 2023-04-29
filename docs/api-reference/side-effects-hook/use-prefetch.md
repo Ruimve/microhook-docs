@@ -1,8 +1,13 @@
 ---
 sidebar_position: 1
+description: Efficiently prefetch resources for faster navigation using usePrefetch hook.
 ---
 
 # usePrefetch
+
+<head>
+  <meta name="keywords" content="prefetching data, preloading data, performance optimization, faster load times, reduced latency, improved user experience, asynchronous loading, lazy loading, data caching, network efficiency, web application speed, reduced server load, React hook for prefetching" />
+</head>
 
 The **usePrefetch** hook is a custom React hook that provides an efficient way to prefetch resources such as images, videos, and other media content before they are needed. This can lead to faster page loads and improved user experience. This documentation will guide you on how to use this hook.
 

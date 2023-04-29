@@ -1,8 +1,13 @@
 ---
 sidebar_position: 3
+description: Detect outside click event and perform action, for React.
 ---
 
 # useOutClick
+
+<head>
+  <meta name="keywords" content="React hook for detecting clicks outside a target element, useOutClick example code and tutorial, React.js onClickOutside hook for modal and dropdown components, How to use useOutClick hook in React for handling click events, Typescript useOutClick hook for closing modals and dropdowns, Handling click events outside React components with useOutClick hook, Better click event handling with useOutClick in React applications" />
+</head>
 
 The **useOutClick** hook is a React hook that allows you to detect clicks outside of a specified HTML element. This can be useful for implementing various user interface features, such as closing a modal or hiding a dropdown menu when the user clicks outside of it.
 
