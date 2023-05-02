@@ -28,7 +28,7 @@ yarn add microhook
 要使用 **useMeasure** 钩子，请将其导入到您的 React 组件中，并将一个 **element** 参数传递给它。**element** 参数可以是表示 CSS 选择器的字符串，也可以是引用您想要测量的元素的 React **RefObject**。
 
 ```tsx
-import { useMeasure } from '@your-username/use-measure';
+import { useMeasure } from 'microhook';
 
 const ExampleComponent = () => {
   const [measure, actions] = useMeasure('#my-element');

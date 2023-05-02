@@ -27,7 +27,7 @@ yarn add microhook
 
 ```tsx
 import { useCallback } from 'react';
-import { usePortal } from '@yourorg/use-portal';
+import { usePortal } from 'microhook';
 
 interface Props {
   text: string;
@@ -62,7 +62,7 @@ function MyComponent({ text }: Props) {
 
 ```tsx
 import { useCallback } from 'react';
-import { usePortal } from '@yourorg/use-portal';
+import { usePortal } from 'microhook';
 
 interface Props {
   text: string;

@@ -38,7 +38,7 @@ The **useOutClick** hook takes a single parameter, which is a callback function 
 Here is an example of how you can use the **useOutClick** hook:
 
 ```tsx
-import { useOutClick } from '@your-org/use-out-click';
+import { useOutClick } from 'microhook';
 
 function MyComponent() {
   const [isOpen, setIsOpen] = useState(false);

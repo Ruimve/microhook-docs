@@ -28,7 +28,7 @@ yarn add microhook
 To use the **useMeasure** hook, import it into your React component and pass it an **element** argument. The **element** argument can be either a string that represents a CSS selector or a React **RefObject** that references the element you want to measure.
 
 ```tsx
-import { useMeasure } from '@your-username/use-measure';
+import { useMeasure } from 'microhook';
 
 const ExampleComponent = () => {
   const [measure, actions] = useMeasure('#my-element');

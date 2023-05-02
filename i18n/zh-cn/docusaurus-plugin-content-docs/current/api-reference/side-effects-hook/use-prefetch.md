@@ -28,7 +28,7 @@ yarn add microhook
 要使用 **usePrefetch** Hook，您首先需要从模块中导入它：
 
 ```tsx
-import { usePrefetch } from './path/to/usePrefetch';
+import { usePrefetch } from 'microhook';
 ```
 
 然后您可以在组件中像这样使用 Hook：

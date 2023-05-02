@@ -28,7 +28,7 @@ yarn add microhook
 To use the **usePrefetch** hook, you first need to import it from the module:
 
 ```tsx
-import { usePrefetch } from './path/to/usePrefetch';
+import { usePrefetch } from 'microhook';
 ```
 
 You can then use the hook in your component like this:

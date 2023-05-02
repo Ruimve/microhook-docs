@@ -29,7 +29,7 @@ yarn add microhook
 
 ```tsx
 import React, { useRef } from 'react';
-import { useRestHeight } from '@your-package-name/use-rest-height';
+import { useRestHeight } from 'microhook';
 
 function MyComponent() {
   const parentRef = useRef(null);

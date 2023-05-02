@@ -37,7 +37,7 @@ import { useOutClick } from 'microhook';
 以下是如何使用 **useOutClick** 钩子的示例：
 
 ```tsx
-import { useOutClick } from '@your-org/use-out-click';
+import { useOutClick } from 'microhook';
 
 function MyComponent() {
   const [isOpen, setIsOpen] = useState(false);
