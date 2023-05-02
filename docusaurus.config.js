@@ -29,7 +29,12 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-cn'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      }
+    },
   },
 
   presets: [
@@ -64,7 +69,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: 'keywords', content: 'microhook, React hooks, useIntersectionObserver, useLoading, useMeasure, useOutClick, usePortal, usePrefetch, useRestHeight, TypeScript, reusable code, performance optimization, SEO.'}],
+      metadata: [{ name: 'keywords', content: 'microhook, React hooks, useIntersectionObserver, useLoading, useMeasure, useOutClick, usePortal, usePrefetch, useRestHeight, TypeScript, reusable code, performance optimization, SEO.' }],
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -83,9 +88,13 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           // { to: '/mdx', label: 'MDX', position: 'right' },
           {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/Ruimve/microhook',
             position: 'right',
-            className:'header-github-link',
+            className: 'header-github-link',
             'aria-label': 'GitHub repository'
           },
         ],
@@ -126,10 +135,10 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              // {
-              //   label: 'Changelog',
-              //   to: '/Changelog',
-              // },
+              {
+                label: 'Changelog',
+                to: 'https://github.com/Ruimve/microhook/blob/master/CHANGELOG.md',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/Ruimve/microhook',
@@ -149,30 +158,30 @@ const config = {
       algolia: {
         // The application ID provided by Algolia
         appId: 'U16ACEWSQO',
-  
+
         // Public API key: it is safe to commit it
         apiKey: 'e463805bcaab81ad6587ac78cf4f9c1b',
-  
+
         indexName: 'microhook',
-  
+
         // Optional: see doc section below
         contextualSearch: true,
-  
+
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
         //externalUrlRegex: 'external\\.com|domain\\.com',
-  
+
         // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
         // replaceSearchResultPathname: {
         //   from: '/docs/', // or as RegExp: /\/docs\//
         //   to: '/',
         // },
-  
+
         // Optional: Algolia search parameters
         // searchParameters: {},
-  
+
         // // Optional: path for search page that enabled by default (`false` to disable it)
         // searchPagePath: 'search',
-  
+
         //... other Algolia params
       },
     }),
