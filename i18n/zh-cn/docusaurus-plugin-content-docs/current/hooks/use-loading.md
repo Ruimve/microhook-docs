@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 description: 一个React Hook用于管理加载状态，支持异步/等待语法和超时控制。
 ---
 

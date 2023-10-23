@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 description: Efficiently prefetch resources for faster navigation using usePrefetch hook.
 ---
 

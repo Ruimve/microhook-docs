@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: A hook to measure the dimensions and position of an HTML element in React.
 ---
 

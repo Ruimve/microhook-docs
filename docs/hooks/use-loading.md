@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 description: A React hook to manage loading state, with support for async/await syntax and timeout control.
 ---
 

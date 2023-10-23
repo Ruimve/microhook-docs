@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 description: 一个用于观察视口中元素相交的 React Hook。
 ---
 

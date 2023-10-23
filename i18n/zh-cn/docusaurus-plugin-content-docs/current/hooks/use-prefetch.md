@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 7
 description: 使用usePrefetch hook有效地预取资源，以实现更快的导航。
 ---
 

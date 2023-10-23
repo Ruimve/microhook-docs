@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 description: Detect outside click event and perform action, for React.
 ---
 
